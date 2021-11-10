@@ -14,7 +14,7 @@ app.use(express.json());
 
 
 app.get('/', (req, res) => {
-    res.send("Welcome To Jerin's parlour")
+    res.send("Welcome To foundation center")
 })
 
 app.listen(port, () => {
