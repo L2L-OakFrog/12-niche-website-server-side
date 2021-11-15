@@ -130,7 +130,7 @@ async function run() {
             res.send(order);
         });
 
-        app.get('/orders', verifyToken, async (req, res) => {
+        app.get('/orders', async (req, res) => {
             const email = req.query.email;
             const query = { email: email };
             const cursor = orderCollection.find(query);
